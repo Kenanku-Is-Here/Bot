@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Discord Authorization</title>
+<style>
+body {
+  background-color: rgb(50, 50, 50); /* Dark gray background */
+  font-family: sans-serif;
+  color: white; /* Text color */
+  text-align: center; /* Center-aligns all text */
+}
+
+button {
+  background-color: rgb(100, 100, 200); /* Light blue button */
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+}
+
+button:hover {
+  background-color: rgb(80, 80, 180); /* Darker blue on hover */
+}
+
+</style>
+</head>
+<body>
+
+<h1>Authorize with Discord</h1>
+<button onclick="redirectToDiscord()">Authorize</button>
+
+<script>
+function redirectToDiscord() {
+  window.location.href = "https://discord.com/oauth2/authorize?client_id=1362513783435825513";
+}
+</script>
+
+</body>
+</html>
